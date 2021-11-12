@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html {
+    margin: auto;
+
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    overflow: scroll;
+}
+
+h1 {
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: calc(40px + 3vw + 1vh);
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.play-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'VT323', monospace;
+    font-size: calc(12px + 2vw + 1vh);
+    transition-duration: 0.5s;
+}
+
+.play-button:hover {
+    color: cyan;
+  }
+
+.container {
+    display: grid;
+    height:100%;
+    grid-template-columns: repeat(auto-fill, minmax(504px, 1fr));
+    justify-self: center;
+    align-items: center;
+}
+.image-div { 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.board-div { 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    mix-blend-mode:hard-light;
+    width: 400px;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 50%; 
+}
+.board {
+    margin: 5%;
+    width: 75vh;
+    max-width: 90vw;
+    max-height: 90vw;
+    height: 75vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.white {
+    height: 12.5%;
+    width: 12.5%;
+    padding: 0px;
+    background-color: rgb(58, 58, 58);
+    text-align:center;
+}
+.black {
+    height: 12.5%;
+    width: 12.5%;
+    padding: 0px;
+    background-color: white; 
+    text-align:center;
+}
+
+
+.black-piece {
+    font-size: calc(14px + 3vh + 2vw);
+    position: relative;
+    z-index:9; 
+    cursor:move;
+    color: black;
+    text-shadow: 3px 2px 0px rgb(8, 183, 183);
+    margin-bottom: 1%;
+    touch-action: none;
+    user-select: none;
+}
+.white-piece {
+    font-size: calc(14px + 3vh + 2vw);
+    position: relative;
+    z-index: 9; 
+    cursor: move;
+    color: black;
+    text-shadow: 3px 2px 0px rgb(164, 0, 177, 1);
+    margin-bottom: 1%;
+}

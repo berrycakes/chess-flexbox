@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard 2.0</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-div">
+            <h1>Queen's Gambit</h1>
+            <img class="image" src="https://pbs.twimg.com/media/E8b-beFXIBAGjdp?format=png&name=4096x4096" alt="">
+            <button class="play-button" onclick="onClick()">NEW GAME</button>
+        </div>
+        <div class="board-div">
+            <div class="board">
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="brook1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9814;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bknight1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9816;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bbishop1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9815;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bqueen" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9813;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bking" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9812;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bbishop2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9815;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bknight2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9816;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="brook2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9814;</div></div>
+        
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn3" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn4" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn5" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn6" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn7" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="black-piece" id="bpawn8" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+        
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+        
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+        
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+         
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"></div>
+        
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn3" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn4" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn5" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn6" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn7" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wpawn8" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9817;</div></div>
+        
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wrook1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9814;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wknight1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9816;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wbishop1" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9815;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wqueen" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9813;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wking" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9812;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wbishop2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9815;</div></div>
+                <div class="white" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wknight2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9816;</div></div>
+                <div class="black" ondragover="onDragOver(event); "ondrop="onDrop(event);"><div class="white-piece" id="wrook2" draggable="true" ondragstart="onDragStart(event);" ondragend="onDragEnd(event);">&#9814;</div></div>
+            </div>
+        </div>   
+    </div>
+    <script>           
+
+      function onDragStart(event) {
+        event.dataTransfer.setData('text/plain', event.target.id);
+        event.currentTarget.style.backgroundColor = 'cyan';
+      }
+      function onDragEnd(event) {
+        console.log(event.currentTarget.style.backgroundColor);
+        event.currentTarget.style.backgroundColor = 'transparent';
+      }
+      function onDragOver(event) {
+        event.preventDefault();
+      }
+      function onDrop(event) {
+        const id = event.dataTransfer.getData('text');
+        const draggableElement = document.getElementById(id);
+        const dropzone = event.target;
+        dropzone.appendChild(draggableElement);
+        event.currentTarget.style.backgroundColor = 'none';
+        event.dataTransfer.clearData();
+      }
+      function onClick() {
+        location.reload();
+      }
+
+    </script>
+</body>
+</html>
